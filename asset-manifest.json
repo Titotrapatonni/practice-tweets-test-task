@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/practice-tweets-test-task/static/css/main.073c9b0a.css",
+    "main.js": "/practice-tweets-test-task/static/js/main.06cce436.js",
+    "static/js/787.28cb0dcd.chunk.js": "/practice-tweets-test-task/static/js/787.28cb0dcd.chunk.js",
+    "index.html": "/practice-tweets-test-task/index.html",
+    "main.073c9b0a.css.map": "/practice-tweets-test-task/static/css/main.073c9b0a.css.map",
+    "main.06cce436.js.map": "/practice-tweets-test-task/static/js/main.06cce436.js.map",
+    "787.28cb0dcd.chunk.js.map": "/practice-tweets-test-task/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.073c9b0a.css",
+    "static/js/main.06cce436.js"
+  ]
+}
