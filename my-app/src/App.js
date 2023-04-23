@@ -1,7 +1,10 @@
-import "./App.css";
+import { Card } from "./components/Card/Card";
+import { CardList } from "./components/CardList/CardList";
 
-function App() {
-  return <div className="App">Test tweets</div>;
-}
-
-export default App;
+export const App = () => {
+  return (
+    <div>
+      <CardList />
+    </div>
+  );
+};
