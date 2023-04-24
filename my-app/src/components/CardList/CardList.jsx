@@ -5,11 +5,11 @@ import { Card } from "../Card/Card";
 
 export const CardList = () => {
   const [users, setUsers] = useState([]);
+
   useEffect(() => {
     fetchUsers().then((data) => setUsers(data));
   }, []);
 
-  console.log(users);
   return (
     <ul>
       {users.map((user) => (

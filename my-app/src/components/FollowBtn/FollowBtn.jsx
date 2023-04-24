@@ -1,19 +1,7 @@
-import { useState } from "react";
-
-export const FollowBtn = () => {
-  const [following, setFollowing] = useState(false);
-
-  const toggle = () => setFollowing((following) => !following);
-  console.log(following);
-  if (!following) {
-    console.log("tweets + 1");
-  } else {
-    console.log("tweets");
-  }
-
+export const FollowBtn = ({ onClick, following }) => {
   return (
-    <button type="button" onClick={toggle}>
-      FollowBtn
+    <button type="button" onClick={onClick}>
+      {following ? "Following" : "Follow"}
     </button>
   );
 };
