@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
+import { BackButton } from "./BackBtn.styled";
 
 export const BackBtn = () => {
-  return <Link to="/">Back</Link>;
+  return <BackButton to="/">Back</BackButton>;
 };

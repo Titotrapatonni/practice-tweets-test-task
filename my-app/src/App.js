@@ -1,14 +1,17 @@
-import { Link, Route, Routes } from "react-router-dom";
+import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
 import Tweets from "./pages/Tweets";
+import { GlobalStyle } from "./components/GlobalStyle";
+import { Nav, NavButton } from "./App.styled";
 
 export const App = () => {
   return (
     <div>
-      <nav>
-        <Link to="/">Home</Link>
-        <Link to="/tweets">Tweets</Link>
-      </nav>
+      <GlobalStyle />
+      <Nav>
+        <NavButton to="/">Home</NavButton>
+        <NavButton to="/tweets">Tweets</NavButton>
+      </Nav>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/tweets" element={<Tweets />} />
