@@ -9,13 +9,13 @@ export const App = () => {
     <div>
       <GlobalStyle />
       <Nav>
-        <NavButton to="practice-tweets-test-task//">Home</NavButton>
-        <NavButton to="practice-tweets-test-task//tweets">Tweets</NavButton>
+        <NavButton to="/">Home</NavButton>
+        <NavButton to="/tweets">Tweets</NavButton>
       </Nav>
       <Routes>
-        <Route path="practice-tweets-test-task//" element={<Home />} />
-        <Route path="practice-tweets-test-task//tweets" element={<Tweets />} />
-        <Route path="practice-tweets-test-task//*" element={<Home />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/tweets" element={<Tweets />} />
+        <Route path="/*" element={<Home />} />
       </Routes>
     </div>
   );
