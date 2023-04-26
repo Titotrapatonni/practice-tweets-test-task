@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 export const BackBtn = () => {
-  return <div>BackBtn</div>;
+  return <Link to="/">Back</Link>;
 };
