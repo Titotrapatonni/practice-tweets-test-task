@@ -4,7 +4,7 @@ export const Navigation = () => {
   return (
     <Nav>
       <NavButton to="/">Home</NavButton>
-      <NavButton to="/tweets">Tweets</NavButton>
+      <NavButton to="tweets">Tweets</NavButton>
     </Nav>
   );
 };
