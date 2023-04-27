@@ -7,7 +7,7 @@ export const FollowBtn = ({ onClick, following }) => {
       onClick={onClick}
       style={{ backgroundColor: following || "#EBD8FF" }}
     >
-      {following ? "Following" : "Follow"}
+      {following ? "FOLLOWING" : "FOLLOW"}
     </FollowButton>
   );
 };

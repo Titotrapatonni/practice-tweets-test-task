@@ -5,5 +5,10 @@ const options = [
   { value: "follow", label: "Follow" },
   { value: "followings", label: "Followings" },
 ];
+export const Filter = ({ setFilter }) => {
+  const handleChange = (e) => {
+    setFilter(e.value);
+  };
 
-export const Filter = () => <Select options={options} />;
+  return <Select options={options} onChange={handleChange} />;
+};

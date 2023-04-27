@@ -3,7 +3,7 @@ import { fetchUsers } from "../../fetchUsers";
 import { useEffect } from "react";
 import { Card } from "../Card/Card";
 
-export const CardList = () => {
+export const CardList = ({ filter }) => {
   const [users, setUsers] = useState([]);
 
   useEffect(() => {
