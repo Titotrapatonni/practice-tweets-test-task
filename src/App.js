@@ -1,21 +1,22 @@
-import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home";
-import Tweets from "./pages/Tweets";
+import { Route, Routes, Navigate } from "react-router-dom";
 import { GlobalStyle } from "./components/GlobalStyle";
-import { Nav, NavButton } from "./App.styled";
+import Layout from "./components/Layout";
+import { lazy } from "react";
+
+const Home = lazy(() => import("./pages/Home"));
+const Tweets = lazy(() => import("./pages/Tweets"));
 
 export const App = () => {
   return (
     <div>
       <GlobalStyle />
-      <Nav>
-        <NavButton to="/">Home</NavButton>
-        <NavButton to="/tweets">Tweets</NavButton>
-      </Nav>
+
       <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/tweets" element={<Tweets />} />
-        <Route path="*" element={<Home />} />
+        <Route path="/" element={<Layout />}>
+          <Route index element={<Home />} />
+          <Route path="/tweets" element={<Tweets />} />
+          <Route path="*" element={<Navigate to={"/"} />} />
+        </Route>
       </Routes>
     </div>
   );
